@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       minHeight: {
-      'custom': '170px'
+      'custom': '200px'
       },
       gridTemplateColumns: {
        'auto-fit': 'repeat(auto-fit, minmax(250px, 1fr))',
