@@ -4,12 +4,24 @@
 @tailwind utilities;
 
 @layer components {
-  .note {
-    @apply flex flex-col justify-between bg-amber-200 p-4 rounded-md min-h-custom whitespace-pre-wrap;
+  body {
+    @apply bg-white;
   }
 
-  .notes-new {
-    @apply bg-teal-300 rounded-md p-4 ;
+  .container {
+    @apply max-w-custom mx-auto px-4;
+  }
+
+  .notes-list {
+    @apply grid gap-4 grid-cols-auto-fit;
+  }
+
+  .note {
+    @apply flex flex-col justify-between p-4 rounded-md min-h-custom whitespace-pre-wrap;
+  }
+
+  .new-note {
+    @apply bg-teal-300 rounded-md p-4 min-h-custom;
   }
 
   textarea {
@@ -25,7 +37,7 @@
   }
 
   .save {
-    @apply bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-3 -m-2 border border-gray-400 rounded-full shadow;
+    @apply bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-2 -m-2 border border-gray-400 rounded-full shadow;
   }
 
 
@@ -33,11 +45,5 @@
     @apply flex justify-between align-middle;
   }
 
-  .notes-list {
-    @apply grid gap-4 grid-cols-auto-fit
-  }
 
-  .container {
-    @apply max-w-custom mx-auto px-4;
-  }
 }
