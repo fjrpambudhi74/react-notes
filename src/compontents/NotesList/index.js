@@ -48,10 +48,15 @@ const NotesList = () => {
     setNotes(newNotes)
   }
 
+  const deleteNote = (id) => {
+    const newNotes = notes.filter((note) => note.id !== id)
+    setNotes(newNotes)
+  }
+
   return (
     <div className="notes-list">
       {notes.map((note) => {
-        return <Note key={note.id} id={note.id} text={note.text} date={note.date} bgColor={note.color}/>
+        return <Note key={note.id} id={note.id} text={note.text} date={note.date} bgColor={note.color} handleDeleteNote={deleteNote}/>
       })}
       <AddNote handleAddNote={addNote}/>
     </div>

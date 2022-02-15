@@ -45,5 +45,9 @@
     @apply flex justify-between align-middle;
   }
 
+  .delete-icon {
+    @apply cursor-pointer;
+  }
+
 
 }
