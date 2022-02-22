@@ -1,5 +1,7 @@
 module.exports = {
+  enabled: true,
   mode: 'jit',
+  darkMode: 'class', // class, 'media' or boolean
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
