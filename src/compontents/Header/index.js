@@ -7,10 +7,9 @@ import useDarkMode from '../../hooks/useDarkMode';
 
 
 const Header = () => {
+
   const [darkTheme, setDarkTheme] = useDarkMode()
-  const handleMode = () => {
-    setDarkTheme(!darkTheme)
-  }
+  const handleMode = () => setDarkTheme(!darkTheme)
 
   return (
     <div className="header">

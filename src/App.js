@@ -1,8 +1,8 @@
-import { useState } from "react/cjs/react.development";
 import NotesList from "./compontents/NotesList";
 import Search from "./compontents/Search";
 import { nanoid } from "nanoid"
 import Header from "./compontents/Header";
+import { useState, useEffect } from "react";
 
 function App() {
 
@@ -38,6 +38,17 @@ function App() {
       color: randomColors()
     },
   ])
+
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data'))
+    if(savedNotes){
+      setNotes(savedNotes)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('react-notes-app-data', JSON.stringify(notes))
+  },[notes])
 
   const addNote = (text) => {
     console.log(randomColors())

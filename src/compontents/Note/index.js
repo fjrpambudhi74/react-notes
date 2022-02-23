@@ -2,7 +2,7 @@ import {MdDeleteForever} from "react-icons/md"
 
 const Note = ({id, text, date,bgColor, handleDeleteNote}) => {
   return(
-    <div className={`note mt-10 ${bgColor}`}>
+    <div className={`note mt-4 ${bgColor}`}>
       <span>{text}</span>
       <div className="note-footer">
       <small>{date}</small>
@@ -12,4 +12,4 @@ const Note = ({id, text, date,bgColor, handleDeleteNote}) => {
   )
 }
 
-export default Note
+export default Note;

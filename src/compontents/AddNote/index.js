@@ -21,7 +21,7 @@ const AddNote = ({handleAddNote}) => {
   }
 
   return(
-    <div className="note new-note">
+    <div className="note mt-4 new-note">
       <textarea placeholder="Type to add note" onChange={handleChange} value={noteText}></textarea>
       <div className="note-footer">
         <small>{charLimit - noteText.length} remaining</small>
