@@ -1,8 +1,10 @@
 import React from "react";
 import {
-  FaMoon,
-  FaSun,
-} from 'react-icons/fa';
+  RiMoonClearLine,
+} from 'react-icons/ri';
+import {
+  BiSun,
+} from 'react-icons/bi';
 import useDarkMode from '../../hooks/useDarkMode';
 
 
@@ -19,9 +21,9 @@ const Header = () => {
       <div>
         <span onClick={handleMode}>
           {darkTheme ? (
-          <FaSun size='24' className='header-icon' />
+          <BiSun size='24' className='header-icon' />
           ) : (
-          <FaMoon size='24' className='header-icon' />
+          <RiMoonClearLine size='24' className='header-icon' />
           )}
         </span>
       </div>

@@ -5,6 +5,14 @@
 
 @layer components {
 
+  ::-webkit-scrollbar {
+    @apply bg-transparent w-2
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-md;
+  }
+
   .header {
     @apply flex justify-between align-middle py-6;
   }
@@ -14,7 +22,7 @@
   }
 
   .header-icon {
-    @apply text-gray-500 mr-3 ml-4 transition duration-300 ease-in-out hover:text-yellow-400 cursor-pointer;
+    @apply text-sky-500 mr-3 ml-4 transition duration-300 ease-in-out hover:text-yellow-400 cursor-pointer;
   }
 
   .container {
@@ -26,7 +34,7 @@
   }
 
   .note {
-    @apply flex flex-col justify-between p-4 rounded-md min-h-custom whitespace-pre-wrap;
+    @apply flex flex-col justify-between p-4 rounded-md min-h-custom break-words;
   }
 
   .new-note {
@@ -34,7 +42,7 @@
   }
 
   textarea {
-    @apply resize-none border-none bg-teal-300 box-border w-full max-w-full;
+    @apply resize-none border-none box-border bg-teal-300 w-full max-w-full h-40;
   }
 
   textarea:focus {

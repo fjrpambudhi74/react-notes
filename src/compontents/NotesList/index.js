@@ -12,4 +12,4 @@ const NotesList = ({notes, handleAddNote, handleDeleteNote}) => {
   )
 }
 
-export default NotesList;
+export default NotesList
